@@ -1,6 +1,5 @@
 // Models/User.js
 const mongoose = require("mongoose");
-
 const { Schema, model } = mongoose;
 
 const userSchema = new Schema(
@@ -14,7 +13,7 @@ const userSchema = new Schema(
     timestamps: true,
     versionKey: false,
     collection: "users",
-  }
+  },
 );
 
 const User = model("User", userSchema);
